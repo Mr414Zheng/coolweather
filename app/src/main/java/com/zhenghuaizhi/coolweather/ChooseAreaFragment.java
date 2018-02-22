@@ -25,10 +25,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import butterknife.Unbinder;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -44,14 +40,6 @@ public class ChooseAreaFragment extends Fragment {
     public static final int LEVEL_CITY = 1;
 
     public static final int LEVEL_COUNTY = 2;
-
-//    private Unbinder unbinder;
-//
-//    @BindView(R.id.title_text)
-//    TextView titleText;
-//    @BindView(R.id.back_button)
-//    Button backButton;
-//    @BindView(R.id.list_view)
 
     private ProgressDialog progressDialog;
 
@@ -254,19 +242,4 @@ public class ChooseAreaFragment extends Fragment {
             progressDialog.dismiss();
         }
     }
-
-//    @Override
-//    public void onDestroyView() {
-//        super.onDestroyView();
-//        unbinder.unbind();
-//    }
-
-//    @OnClick(R.id.back_button)
-//    public void onViewClicked() {
-//        if (currentLevel == LEVEL_COUNTY) {
-//            queryCities();
-//        }else if (currentLevel == LEVEL_CITY) {
-//            queryProvinces();
-//        }
-//    }
 }
